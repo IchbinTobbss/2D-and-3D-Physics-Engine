@@ -1,3 +1,5 @@
+#run with administrator!!!
+
 @echo off
 
 echo Installiere Python...
