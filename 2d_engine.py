@@ -1,30 +1,9 @@
-import subprocess
-import sys
-import importlib
-
-packages = {
-    "arcade": "arcade",
-    "pymunk" : "pymunk"
-}
-
-for module, package in packages.items():
-    try:
-        importlib.import_module(module)
-        print(f"✓ {package} ist installiert.")
-    except ImportError:
-        print(f"Installiere {package}...")
-        subprocess.check_call([sys.executable, "-m", "pip", "install", package])
-
-print("Dependencies are installed")
-
-
-
-
 import arcade
 import pymunk
 import random
 import math
-
+import subprocess
+subprocess.run(["python", "getframework.py"])
 SCREEN_WIDTH = 1000
 SCREEN_HEIGHT = 700
 
