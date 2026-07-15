@@ -28,7 +28,7 @@ If you want to delete Python and its packages ---  |ON WINDOWS --- Right-Click t
 ON MAC -- WARNING!!!!!!! If uninstall doesn't work, run get_homebrew.sh, and if this doesn't work either, run this in the terminal: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 
-To make the scripts functional, run chmod +x *.command in the terminal.
+To make the scripts functional, run chmod +x *.command in the terminal. You also need to run xattr -d com.apple.quarantine *.command after, PLEASE trust me, I am legit.
 
 ---GERMAN (Deutsch)---
 
@@ -53,4 +53,4 @@ Wenn du Python und seine Pakete löschen willst --- |AUF WINDOWS --- Rechtsklick
 Auf Mac -- WICHTIG!!!!!!!! Wenn das uninstall Skript nicht funktioniert, führe get_homebrew.sh aus. Wenn das auch nicht funktioniert, führe /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" im terminal aus.
 
 
-Um die Skripte funktionsfähig zu machen, führe chmod +x *.command im Terminal aus.
+Um die Skripte funktionsfähig zu machen, führe chmod +x *.command im Terminal aus. Du musst anschließen auch noch xattr -d com.apple.quarantine *.command im Terminal ausführen. Bitte vertraue mir, ich will deinen Mac nicht mit Viren infiszieren!
