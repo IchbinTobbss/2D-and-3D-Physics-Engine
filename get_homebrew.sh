@@ -1,23 +1,18 @@
 #!/bin/bash
 
-echo "Prüfe Homebrew..."
+echo "Installiere Homebrew..."
 
 if ! command -v brew >/dev/null 2>&1; then
-    echo "Installiere Homebrew..."
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+    # Homebrew für Apple Silicon (M1–M5) in dieser Sitzung aktivieren
     if [ -f /opt/homebrew/bin/brew ]; then
         eval "$(/opt/homebrew/bin/brew shellenv)"
         echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
     fi
+else
+    echo "Homebrew ist bereits installiert."
 fi
 
-echo "Installiere Python..."
-brew install python
-
-echo "Installiere Python-Pakete..."
-python3 -m pip install --upgrade pip
-python3 -m pip install arcade pymunk
-
-echo
-echo "✅ Alles erfolgreich installiert!"
+echo "Homebrew-Version:"
+brew --version

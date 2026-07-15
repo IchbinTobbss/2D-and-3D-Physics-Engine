@@ -25,8 +25,7 @@ Step 5 - Enjoy!
 
 If you want to delete Python and its packages ---  |ON WINDOWS --- Right-Click the uninstall_python.cmd file, click "Properties". Then, on the bottom, there should be a message like "This is a file from another computer..." Click allow. Then, click OK. Run the file WITHOUT admin permissions this time. Now, Python and its packages will be removed from your computer.
 
-ON MAC -- (coming)
-
+ON MAC -- WARNING!!!!!!! If uninstall doesn't work, run get_homebrew.sh
 
 ---GERMAN (Deutsch)---
 
@@ -48,4 +47,4 @@ SCHRITT 5 - Viel Spaß!
 
 Wenn du Python und seine Pakete löschen willst --- |AUF WINDOWS --- Rechtsklicke auf die Datei uninstall_python.cmd, klicke auf „Eigenschaften“. Unten sollte eine Meldung stehen wie „Dies ist eine Datei von einem anderen Computer...“ Klicke auf Zulassen. Dann auf OK. Führe die Datei JETZT OHNE Administratorrechte aus. Jetzt werden Python und seine Pakete von deinem Computer entfernt.
 
-Auf Mac -- (kommt bald)
+Auf Mac -- WICHTIG!!!!!!!! Wenn das uninstall Skript nicht funktioniert, führe get_homebrew.sh aus.
