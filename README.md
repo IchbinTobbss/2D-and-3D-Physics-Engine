@@ -27,6 +27,9 @@ If you want to delete Python and its packages ---  |ON WINDOWS --- Right-Click t
 
 ON MAC -- WARNING!!!!!!! If uninstall doesn't work, run get_homebrew.sh, and if this doesn't work either, run this in the terminal: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+
+To make the scripts functional, run chmod +x *.command in the terminal.
+
 ---GERMAN (Deutsch)---
 
 --- Wenn du weißt, wie man dieses Skript einrichtet, musst du das hier nicht lesen.  
@@ -48,3 +51,6 @@ SCHRITT 5 - Viel Spaß!
 Wenn du Python und seine Pakete löschen willst --- |AUF WINDOWS --- Rechtsklicke auf die Datei uninstall_python.cmd, klicke auf „Eigenschaften“. Unten sollte eine Meldung stehen wie „Dies ist eine Datei von einem anderen Computer...“ Klicke auf Zulassen. Dann auf OK. Führe die Datei JETZT OHNE Administratorrechte aus. Jetzt werden Python und seine Pakete von deinem Computer entfernt.
 
 Auf Mac -- WICHTIG!!!!!!!! Wenn das uninstall Skript nicht funktioniert, führe get_homebrew.sh aus. Wenn das auch nicht funktioniert, führe /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" im terminal aus.
+
+
+Um die Skripte funktionsfähig zu machen, führe chmod +x *.command im Terminal aus.
