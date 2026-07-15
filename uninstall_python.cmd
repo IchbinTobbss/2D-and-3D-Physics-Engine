@@ -1,8 +1,11 @@
 @echo off
-echo Deinstalliere Python...
+
+echo Entferne Python...
 
 winget uninstall Python.Python.3.13
 
 echo.
-echo Python wurde entfernt.
-pause
+echo Deinstallation fertig!
+
+echo Loesche dieses Skript...
+del "%~f0"
