@@ -13,6 +13,7 @@ Unzip it.
 
 STEP 2 - If you're on Windows, the click install_python.cmd
 However, if you're on Mac, the choose install_python.command
+
 Open the file as administrator.
 
 STEP 3 - Wait until the installation is finished - the installer should delete itself.
