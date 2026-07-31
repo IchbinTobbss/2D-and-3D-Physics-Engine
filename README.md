@@ -12,7 +12,7 @@ STEP 1 - Download as .zip.
 Unzip it.
 
 STEP 2 - If you're on Windows, the click install_python.cmd
-However, if you're on Mac, the choose install_python.sh.
+However, if you're on Mac, the choose install_python.command
 Open the file as administrator.
 
 STEP 3 - Wait until the installation is finished - the installer should delete itself.
@@ -39,7 +39,7 @@ SCHRITT 1 - Als .zip herunterladen.
 Entpacke es.  
 
 SCHRITT 2 - Wenn du Windows benutzt, klicke auf install_python.cmd  
-Falls du einen Mac benutzt, wähle install_python.sh.  
+Falls du einen Mac benutzt, wähle install_python.command
 Öffne die Datei als Administrator.  
 
 SCHRITT 3 - Warte, bis die Installation fertig ist – der Installer sollte sich selbst löschen.  
