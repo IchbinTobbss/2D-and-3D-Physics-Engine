@@ -7,6 +7,25 @@ from pathlib import Path
 import shutil
 import os
 import subprocess
+import time
+import mss
+import numpy as np
+
+with mss.mss() as sct:
+    monitor = sct.monitors[1]
+
+    last = time.time()
+    frames = 0
+
+    while True:
+        img = np.array(sct.grab(monitor))
+        frames += 1
+
+        if time.time() - last >= 1:
+            print(f"FPS: {frames}")
+            frames = 0
+            last = time.time()
+
 
 import time
 import mss
