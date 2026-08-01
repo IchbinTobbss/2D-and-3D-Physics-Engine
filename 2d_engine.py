@@ -7,6 +7,7 @@ from pathlib import Path
 import shutil
 import os
 import subprocess
+"""
 import time
 import mss
 import numpy as np
@@ -45,7 +46,7 @@ with mss.mss() as sct:
             print(f"FPS: {frames}")
             frames = 0
             last = time.time()
-
+"""
 
 repo_url = "https://github.com/IchbinTobbss/Tobbss-Framework.git"
 current_dir = Path(__file__).parent.resolve()
