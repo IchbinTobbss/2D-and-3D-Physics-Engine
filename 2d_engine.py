@@ -3,7 +3,35 @@ import pymunk
 import random
 import math
 import subprocess
-subprocess.run(["python", "getframework.py"])
+from pathlib import Path
+import shutil
+import os
+import subprocess
+
+repo_url = "https://github.com/IchbinTobbss/Tobbss-Framework.git"
+current_dir = Path(__file__).parent.resolve()
+target_dir = current_dir / "Tobbss-Framework"
+if target_dir.exists():
+    print("Framework folder exists. Pulling latest updates...")
+    subprocess.run(["git", "pull"], cwd=str(target_dir), check=True)
+else:
+    print("Framework folder does not exist. Cloning fresh...")
+    subprocess.run(["git", "clone", repo_url, str(target_dir)], check=True)
+source_file = target_dir / "main.py"
+destination_file = current_dir / "main.py"
+if source_file.exists():
+    if destination_file.exists():
+        destination_file.unlink()
+    shutil.move(str(source_file), str(destination_file))
+    print("Successfully moved main.py to the root folder!")
+else:
+    print("Notice: main.py not found in Tobbss-Framework (it might have already been moved).")
+if destination_file.exists():
+    print("Running main.py...")
+    subprocess.run(["python3", str(destination_file)], check=True)
+else:
+    print("Error: Could not execute main.py because the file is missing.")
+
 SCREEN_WIDTH = 1000
 SCREEN_HEIGHT = 700
 
@@ -14,7 +42,7 @@ GRAVITY = (0, -900)
 
 BLOCK_NORMAL = 1
 BLOCK_SPAWNER = 2
-BLOCK_REMOVER = 3
+BLOCK_REMOVER = (NotImplemented)
 
 
 class Sandbox(arcade.Window):
@@ -122,7 +150,7 @@ class Sandbox(arcade.Window):
         self.space.add(body, shape)
         self.balls.append(body)
 
-    # ---------------- FULL CLEAR (FIXED C KEY) ----------------
+    # ---------------- FULL CLEAR ----------------
     def clear_all_balls(self):
 
         for ball in self.balls:

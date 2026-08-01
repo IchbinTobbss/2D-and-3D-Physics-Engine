@@ -5,7 +5,7 @@ Have fun!
 
 ---ENGLISH---
 
---- If you know how to set this script up, then you don't have to read this.
+--- If you know how to set these scripts up, then you don't have to read this.
 If not, then stick around.
 
 STEP 1 - Download as .zip.
@@ -26,14 +26,16 @@ Step 5 - Enjoy!
 
 If you want to delete Python and its packages ---  |ON WINDOWS --- Right-Click the uninstall_python.cmd file, click "Properties". Then, on the bottom, there should be a message like "This is a file from another computer..." Click allow. Then, click OK. Run the file WITHOUT admin permissions this time. Now, Python and its packages will be removed from your computer.
 
-ON MAC -- WARNING!!!!!!! If uninstall doesn't work, run get_homebrew.sh, and if this doesn't work either, run this in the terminal: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+--MAC--
+
+WARNING!!!!!!! If uninstall doesn't work, run get_homebrew.sh, and if this doesn't work either, run this in the terminal: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 
 To make the scripts functional, run chmod +x *.command in the terminal. You also need to run xattr -d com.apple.quarantine *.command after, PLEASE trust me, I am legit.
 
 ---GERMAN (Deutsch)---
 
---- Wenn du weißt, wie man dieses Skript einrichtet, musst du das hier nicht lesen.  
+--- Wenn du weißt, wie man diese Skripte einrichtet, musst du das hier nicht lesen.  
 Wenn nicht, bleib dran.  
 
 SCHRITT 1 - Als .zip herunterladen.  
@@ -51,7 +53,9 @@ SCHRITT 5 - Viel Spaß!
 
 Wenn du Python und seine Pakete löschen willst --- |AUF WINDOWS --- Rechtsklicke auf die Datei uninstall_python.cmd, klicke auf „Eigenschaften“. Unten sollte eine Meldung stehen wie „Dies ist eine Datei von einem anderen Computer...“ Klicke auf Zulassen. Dann auf OK. Führe die Datei JETZT OHNE Administratorrechte aus. Jetzt werden Python und seine Pakete von deinem Computer entfernt.
 
-Auf Mac -- WICHTIG!!!!!!!! Wenn das uninstall Skript nicht funktioniert, führe get_homebrew.sh aus. Wenn das auch nicht funktioniert, führe /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" im terminal aus.
+--MAC--
+
+WICHTIG!!!!!!!! Wenn das uninstall Skript nicht funktioniert, führe get_homebrew.sh aus. Wenn das auch nicht funktioniert, führe /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" im terminal aus.
 
 
 Um die Skripte funktionsfähig zu machen, führe chmod +x *.command im Terminal aus. Du musst anschließen auch noch xattr -d com.apple.quarantine *.command im Terminal ausführen. Bitte vertraue mir, ich will deinen Mac nicht mit Viren infiszieren!
